@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+
+  - name: v_srcdata_structure
+    description: "dbt model sourcedata structure"
+    columns:
+      - name: tbl_name
+        description: "primary key"
+        tests:
+          - unique
+          - not_null
